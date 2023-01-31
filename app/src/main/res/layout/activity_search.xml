@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HousingSearchActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <include
+                layout="@layout/toolbar_main"
+                android:id="@+id/toolbar" />
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Spinner
+                        android:id="@+id/houses"
+                        android:layout_width="212dp"
+                        android:layout_height="76dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="144dp"
+                        android:layout_marginBottom="36dp"
+                        android:entries="@array/options"
+                        app:layout_constraintBottom_toTopOf="@+id/getPosts"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/getPosts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="17dp"
+                        android:background="@android:color/holo_purple"
+                        android:color="@color/purple_200"
+                        android:text="Search Posts"
+                        android:textColor="@android:color/white"
+                        app:layout_constraintBottom_toTopOf="@+id/postings"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/houses" />
+
+                    <TextView
+                        android:id="@+id/postings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:text="Posts:"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_500"
+                        android:textFontWeight="50"
+                        android:textSize="22pt"
+                        app:layout_constraintBottom_toTopOf="@+id/list_options"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/getPosts" />
+
+                    <ListView
+                        android:id="@+id/list_options"
+                        android:layout_width="399dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="sans-serif"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_500"
+                        android:textFontWeight="50"
+                        android:textSize="8pt"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/postings" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/menu_nav" />
+        </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Spinner
+                android:id="@+id/houses"
+                android:layout_width="212dp"
+                android:layout_height="76dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="144dp"
+                android:layout_marginBottom="36dp"
+                android:entries="@array/options"
+                app:layout_constraintBottom_toTopOf="@+id/getPosts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/getPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="17dp"
+                android:background="@android:color/holo_purple"
+                android:color="@color/purple_200"
+                android:text="Search Posts"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="@+id/postings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/houses" />
+
+            <TextView
+                android:id="@+id/postings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Posts:"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textFontWeight="50"
+                android:textSize="22pt"
+                app:layout_constraintBottom_toTopOf="@+id/list_options"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/getPosts" />
+
+            <ListView
+                android:id="@+id/list_options"
+                android:layout_width="399dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textFontWeight="50"
+                android:textSize="8pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postings" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+-->

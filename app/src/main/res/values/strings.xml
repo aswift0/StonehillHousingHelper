@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Stonehill Housing App</string>
+    <string-array name="options">
+        <item>Ohara Hall</item>
+        <item>Corr Hall</item>
+        <item>Holy Cross Center</item>
+        <item>Boland Hall</item>
+        <item>Villa Theresa</item>
+        <item>Pilgrim Heights</item>
+        <item>Village Trailers</item>
+        <item>Notre Dame du Lac</item>
+        <item>Colonial Courts</item>
+        <item>Commonwealth Courts</item>
+        <item>New Hall</item>
+        <item>Off-Campus</item>
+        <item>No Preference</item>
+    </string-array>
+    <string-array name="years">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+    <string-array name="genders">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="username">username</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="title_activity_new_user">Hello first fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="title_activity_new_post">NewPostActivity</string>
+    <string name="title_activity_view_profile">ViewProfile</string>
+    <string name="title_activity_housing_search">HousingSearchActivity</string>
+    <string name="title_activity_view_house">ViewHouseActivity</string>
+    <string name="title_activity_temp">temp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
